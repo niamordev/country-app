@@ -25,13 +25,13 @@ function App() {
     <>
     <BrowserRouter>
     <Routes>
-      <Route path='/' 
+      <Route exact path='/country-app/' 
       element={<Home dataCountries={dataCountries}/>}/>
       
-      <Route path='/country/:countryname' 
+      <Route path='/country-app/country/:countryname' 
       element={<SpecificCountry dataCountries={dataCountries} />}/>
 
-    <Route path='/*' 
+    <Route path='/country-app/*' 
       element={<PageNotFound />}/>
 
     </Routes>
